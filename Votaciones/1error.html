@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Incluye los archivos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para la pantalla flotante */
+        .custom-modal-content {
+            padding: 30px; /* Aumenta el espacio interno */
+            text-align: center;
+        }
+
+        .custom-text {
+            font-size: 24px; /* Aumenta el tamaño del texto */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Definición de la pantalla flotante (modal) -->
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-body text-center"> <!-- Agrega la clase text-center para centrar horizontalmente -->
+        <!-- Contenido de la pantalla flotante -->
+        <p class="custom-text">El usuario ya ha votado.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Incluye los archivos JavaScript de Bootstrap (jQuery y Popper.js son necesarios) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+
+<script>
+  // Función para mostrar la pantalla flotante y luego redirigir
+  function mostrarPantallaFlotanteYRedirigir() {
+    $('#miModal').modal('show'); // Muestra la pantalla flotante
+
+    setTimeout(function() {
+      $('#miModal').modal('hide'); // Cierra la pantalla flotante después de 3 segundos
+      window.location.href = 'loginVotaciones.php'; // Redirige a la página deseada
+    }, 3000); // 3000 milisegundos = 3 segundos
+  }
+
+  // Llama a la función para mostrar la pantalla flotante y redirigir cuando se carga la página
+  $(document).ready(mostrarPantallaFlotanteYRedirigir);
+</script>
+
+</body>
+</html>

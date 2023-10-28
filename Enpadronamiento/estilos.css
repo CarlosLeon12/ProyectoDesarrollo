@@ -1,0 +1,102 @@
+/*------------------login-----------------------------*/
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px; 
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+/*------------------------Menu Bar Inicio---------------------------------*/
+
+.panel{
+    width: 320px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+.Pnel{
+    border-radius: 10px;
+    height: 770px;
+    border: 1px solid black;
+}
+
+.usuario{
+    height: 50px;
+    width: 50px;
+}
+
+.divUsu{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.NomUsuario{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px
+}
+
+/*-------------------------Inicio---------------------------------*/
+
+.bodInicio {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.bodyLogin {
+    background-image: url('https://i.pinimg.com/originals/47/b1/c9/47b1c9ee06af07d4792e2835e08723e7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.barra{
+    margin-bottom: 300px;
+
+}
+
+.LogoPrin{
+    width:  150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/*--------------------------------Registrar-------------------------------------*/
+
+.arriba{
+    margin-bottom: 480px;
+}
+
+.text{
+    text-align: center;
+}
+
+.font-large {
+    font-size: 50px;
+}
+
+.titulos{
+    text-align: center;
+    
+}
